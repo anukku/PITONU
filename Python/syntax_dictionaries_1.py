@@ -22,10 +22,10 @@ employee_info["Job"] = "Web Developer"
 employee_info["Hobbies"] = "Playing video games", "Reading"
 # print(employee_info)
 
-if "Favorite Color" in employee_info:
-    print(employee_info["Favorite Color"])
+# if "Favorite Color" in employee_info:
+#print(employee_info["Favorite Color"])
 
-print(employee_info.get("Favorite Color"))
+#print(employee_info.get("Favorite Color"))
 
 employee_info_1 = {
     "Name": "Will",
@@ -42,4 +42,15 @@ employee_info_1 = {
 }
 
 employee_info_1.clear()
-print(employee_info_1)
+# print(employee_info_1)
+
+my_info = employee_info.copy()
+my_info["Best Friend"] = "Vasile Ion"
+# print(my_info)
+print(employee_info)
+
+letters = {'a', 'e', 'i', 'o', 'u'}
+numbers = [1, 2]
+
+vowels = dict.fromkeys(letters)
+print({}.fromkeys(employee_info))
